@@ -2,9 +2,7 @@ var CL = {
 
     LoadProject: function () {
 
-
         CL.App.Controller.Index.load();
-
     },
 
     App: {
@@ -28,10 +26,10 @@ var CL = {
     Data: {
         Local: {
             /*
-         * input JSON object as string object into a local storage
-         * @param {string} nome
-         * @param {object} obj
-         */
+			* input JSON object as string object into a local storage
+			* @param {string} nome
+			* @param {object} obj
+			*/
             set: function (nome, obj) {
                 var objtxt = JSON.stringify(obj);
                 localStorage.setItem(nome, objtxt);
@@ -63,10 +61,10 @@ var CL = {
 
         Session: {
             /*
-         * input JSON object as string object into a session storage
-         * @param {string} nome
-         * @param {object} obj
-         */
+			* input JSON object as string object into a session storage
+			* @param {string} nome
+			* @param {object} obj
+			*/
             set: function (nome, obj) {
                 var objtxt = JSON.stringify(obj);
                 sessionStorage.setItem(nome, objtxt);
